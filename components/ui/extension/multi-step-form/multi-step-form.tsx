@@ -1,19 +1,25 @@
-"use client";
-import { containerMultiStepForm as container } from "@/constants/framer-motion";
-import { CampaignFormContext } from "@/app/example/multi-step-form/campaign/_components/multi-step-campaign-config";
-import { useMultiStepForm } from "@/hooks/multi-step-form";
-import { motion } from "framer-motion";
-import { Form } from "@/components/ui/form";
-import React, { PropsWithChildren } from "react";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../../card";
+"use client"
+import { CampaignFormContext } from "@/app/[locale]/example/multi-step-form/campaign/_components/multi-step-campaign-config"
+import { Form } from "@/components/ui/form"
+import { containerMultiStepForm as container } from "@/constants/framer-motion"
+import { useMultiStepForm } from "@/hooks/multi-step-form"
+import { motion } from "framer-motion"
+import React, { PropsWithChildren } from "react"
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "../../card"
 
 interface Props extends PropsWithChildren {
-  title: string;
-  description: string;
-};
+  title: string
+  description: string
+}
 
 const MultiStepForm = ({ title, description, children }: Props) => {
-  const { form, onSubmit, onErrors } = useMultiStepForm(CampaignFormContext);
+  const { form, onSubmit, onErrors } = useMultiStepForm(CampaignFormContext)
   return (
     <Form {...form}>
       <form onSubmit={form?.handleSubmit(onSubmit, onErrors)}>
@@ -26,7 +32,9 @@ const MultiStepForm = ({ title, description, children }: Props) => {
         >
           <Card>
             <CardHeader>
-              <CardTitle className="text-2xl font-semibold text-primary md:text-3xl">{title}</CardTitle>
+              <CardTitle className="text-2xl font-semibold text-primary md:text-3xl">
+                {title}
+              </CardTitle>
               <CardDescription className="text-sm text-neutral-400 md:text-base">
                 {description}
               </CardDescription>
@@ -38,7 +46,7 @@ const MultiStepForm = ({ title, description, children }: Props) => {
         </motion.div>
       </form>
     </Form>
-  );
-};
+  )
+}
 
-export default MultiStepForm;
+export default MultiStepForm

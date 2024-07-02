@@ -1,0 +1,12 @@
+{
+  "Global": {
+    "sign-out": "Salir",
+    "enter": "Ingresar",
+    "profile": "Perfil",
+    "my-account": "Mi Cuenta"
+  },
+  "Index": {
+    "title": "Listo para autenticar tu nuevo proyecto?",
+    "description": "Este Starter-Kit fue desarrollado para ahorrar tu tiempo. Aquí encuentras lo que necesitas para empezar a desarrollar tu proyecto con seguridad."
+  }
+}
