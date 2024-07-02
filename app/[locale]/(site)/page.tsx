@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl"
 
 export default function Home() {
   const t = useTranslations("Index")
+  const g = useTranslations("Global")
   return (
     <div className="flex min-h-screen w-full flex-col">
       <header className="sticky top-0 flex h-16 items-center gap-4 border-b bg-background px-4 md:px-6 z-10">
@@ -20,7 +21,7 @@ export default function Home() {
                 rel="noreferrer"
               >
                 <span className="text-xs bg-primary-600 rounded-full text-foreground dark:text-white px-4 py-1.5 mr-3">
-                  Novidades
+                  {g("news")}
                 </span>{" "}
                 <span className="text-sm font-medium">Auth Starter-Kit</span>
                 <svg
@@ -53,14 +54,14 @@ export default function Home() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Saiba mais
+                  {g("learn-more")}
                   <svg
                     className="ml-2 -mr-1 w-5 h-5"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                     xmlns="http://www.w3.org/2000/svg"
                     role="img"
-                    aria-label="Saiba mais"
+                    aria-label={g("learn-more")}
                   >
                     <path
                       fillRule="evenodd"
@@ -85,12 +86,12 @@ export default function Home() {
                   >
                     <path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z" />
                   </svg>
-                  Assista o vídeo
+                  {g("watch")}
                 </a>
               </div>
               <div className="px-4 mx-auto text-center md:max-w-screen-md lg:max-w-screen-lg lg:px-36">
                 <span className="font-semibold text-gray-400 uppercase">
-                  Apoio ao Canal
+                  {g("suport")}
                 </span>
                 <div className="flex flex-wrap justify-center items-center mt-8 text-gray-500 sm:justify-between">
                   <a

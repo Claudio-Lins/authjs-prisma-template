@@ -3,10 +3,34 @@
     "sign-out": "Exit",
     "enter": "Enter",
     "profile": "Profile",
-    "my-account": "My Account"
+    "my-account": "My Account",
+    "learn-more": "Learn more",
+    "news": "News",
+    "watch": "Watch video",
+    "suport": "Support the chanel"
   },
   "Index": {
     "title": "Ready to authenticate your new project",
     "description": "This Starter-Kit was developed to save your time. Here you find what you need to start developing your project securely."
+  },
+  "multi-step-form": {
+    "title": "Onboarding",
+    "subtitle": "Enter the information to start using the product",
+    "form-title": "Name your campaign",
+    "label-step-1": "Campaign",
+    "form-subtitle-step-1": "The Name will be used in reports",
+    "form-input-label-step-1": "Name",
+    "form-input-description-step-1": "Public name of the campaign.",
+    "label-step-2": "Administrator",
+    "form-input-label-step-2": "Administrator",
+    "form-subtitle-step-2": "This is the Administrator of the campaign",
+    "label-step-3": "Page",
+    "form-input-label-step-3": "Page",
+    "form-subtitle-step-3": "Campaign website.",
+    "buttons": {
+      "next": "Next",
+      "previous": "Previous",
+      "finish": "Finish"
+    }
   }
 }

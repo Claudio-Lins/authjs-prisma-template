@@ -3,10 +3,34 @@
     "sign-out": "Salir",
     "enter": "Ingresar",
     "profile": "Perfil",
-    "my-account": "Mi Cuenta"
+    "my-account": "Mi Cuenta",
+    "learn-more": "Aprende más",
+    "news": "Noticias",
+    "watch": "Ver video",
+    "suport": "Apoya el canal"
   },
   "Index": {
     "title": "Listo para autenticar tu nuevo proyecto?",
     "description": "Este Starter-Kit fue desarrollado para ahorrar tu tiempo. Aquí encuentras lo que necesitas para empezar a desarrollar tu proyecto con seguridad."
+  },
+  "multi-step-form": {
+    "title": "Onboarding",
+    "subtitle": "Ingrese la información para empezar a usar el producto",
+    "form-title": "Nombre tu campaña",
+    "label-step-1": "Campaña",
+    "form-subtitle-step-1": "El nombre se utilizará en los informes",
+    "form-input-label-step-1": "Nombre",
+    "form-input-description-step-1": "Nombre público de la campaña.",
+    "label-step-2": "Administrador",
+    "form-input-label-step-2": "Administrador",
+    "form-subtitle-step-2": "Este es el Administrador de la campaña",
+    "label-step-3": "Página",
+    "form-input-label-step-3": "Página",
+    "form-subtitle-step-3": "Sitio web de la campaña.",
+    "buttons": {
+      "next": "Siguiente",
+      "previous": "Anterior",
+      "finish": "Finalizar"
+    }
   }
 }
